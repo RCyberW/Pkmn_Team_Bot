@@ -14,7 +14,7 @@ public class DataReader {
 	HashMap<String, Type> typedict = new HashMap<String, Type>();
 	ArrayList<Type> typelist = new ArrayList<Type>();
 	ArrayList<Creature> creaturelist = new ArrayList<Creature>();
-
+	ArrayList<Creature> partyLineup = new ArrayList<Creature>();
 	ArrayList<String> exceptions = new ArrayList<String>();
 
 	public DataReader() {
@@ -135,7 +135,7 @@ public class DataReader {
 					if (atkr < 4) {
 						// if a duo type can be only good against 4 types
 						// do not want
-//						toAdd = false;
+						// toAdd = false;
 					}
 					creatureType = new Type[] { typedict.get(types[0]),
 							typedict.get(types[1]) };
@@ -150,7 +150,7 @@ public class DataReader {
 					if (t.getDoubleDamageAgainst().size() < 2) {
 						// if it is only good against 1 type
 						// do not want
-//						toAdd = false;
+						// toAdd = false;
 					}
 					creatureType = new Type[] { typedict.get(types[0]) };
 				}
@@ -379,14 +379,13 @@ public class DataReader {
 					: 0;
 			offensiveSpear += 100 <= currCreature.getBaseStats().getMagDmg() ? 1
 					: 0;
-			offensiveSpear += 100 <= currCreature.getBaseStats().getSpd() ? 1
-					: 0;
 
 			defensiveShield += currCreature.getBaseStats().getPhyDef()
 					+ currCreature.getBaseStats().getMagDef()
 					+ currCreature.getBaseStats().getHealth();
 
-			if (offensiveSpear < atkMargin && defensiveShield < defenseMargin)
+			if (offensiveSpear < atkMargin && defensiveShield < defenseMargin
+					|| 90 > currCreature.getBaseStats().getSpd())
 				continue;
 
 			String url = "http://bulbapedia.bulbagarden.net/wiki/"
@@ -465,6 +464,50 @@ public class DataReader {
 				+ " defenders out of " + y + " candidates");
 	}
 
+	boolean[] defeatedTypes = new boolean[typelist.size()];
+
+	private void buildParty(String[] existingIdea) {
+		if (defeatedTypes == null || defeatedTypes.length == 0)
+			defeatedTypes = new boolean[typelist.size()];
+
+		if (existingIdea == null || existingIdea.length == 0) {
+			// no idea, fill party
+		} else {
+			// process the existing party
+			for (String name : existingIdea) {
+				for (int i = 0; i < creaturelist.size(); i++) {
+					Creature partySelect = creaturelist.get(i);
+					if (partySelect.getName().equalsIgnoreCase(name)) {
+						partyLineup.add(partySelect);
+						for (Type t : partySelect.getTypes()) {
+							// get the type of the selected creature
+							for (Type strongAgainst : t
+									.getDoubleDamageAgainst()) {
+								// mark off all the type this creature will
+								// cover by STAB
+								int typeIdx = findTypeIndex(strongAgainst);
+								if (typeIdx > -1) {
+									defeatedTypes[typeIdx] = true;
+								}
+							}
+						}
+					}
+				}
+			}
+			buildParty(null);
+		}
+	}
+
+	private int findTypeIndex(Type type) {
+		for (int i = 0; i < typelist.size(); i++) {
+			if (typelist.get(i) == type) {
+				return i;
+			}
+		}
+
+		return -1;
+	}
+
 	public static void main(String[] args) {
 		DataReader dr = new DataReader();
 		try {
@@ -475,6 +518,7 @@ public class DataReader {
 			dr.readFile("Misc");
 
 			dr.candidateAnalysis("ABCD");
+			dr.buildParty(null);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

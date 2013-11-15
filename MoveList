@@ -1,0 +1,607 @@
+[Attack]	[Type]	[Class]	[PP]	[Power]	[Accuracy]	[Targets]	[Long Range]	[Contact]	[Other Notes]
+Absorb	Grass	Special	25	20	100	One	No	No	Absorbs HP
+Acid	Poison	Special	30	40	100	Enemies	No	No	Lowers target Sp. Def.
+Acid Armor	Poison	Status	20	---	---	User	No	No	Raises Defense sharply
+Acid Spray	Poison	Special	20	40	100	One	No	No	Lowers target Sp. Def. harshly
+Acrobatics	Flying	Physical	15	55	100	One	Yes	Yes	Stronger if target holds nothing
+Acupressure	Normal	Status	30	---	---	User/Ally	No	No	Boosts random stat
+Aerial Ace	Flying	Physical	20	60	---	One	Yes	Yes	Will not miss
+Aeroblast	Flying	Special	5	100	95	One	Yes	Yes	Higher critical-hit rate than normal
+After You	Normal	Status	15	---	---	One	No	No	Target moves after the user
+Agility	Psychic	Status	30	---	---	User	No	No	Raises Speed sharply
+Air Cutter	Flying	Special	25	60	95	Enemies	No	No	Higher critical-hit rate than normal
+Air Slash	Flying	Special	20	75	95	One	Yes	No	May cause flinching
+Ally Switch	Psychic	Status	15	---	---	User	No	No	Changes place with an ally in Double/Triple Battles
+Amnesia	Psychic	Status	20	---	---	User	No	No	Sharply raises Sp. Def.
+AncientPower	Rock	Special	5	60	100	One	No	No	May raise all of the user's stats
+Aqua Jet	Water	Physical	20	40	100	One	No	Yes	Will always strike first
+Aqua Ring	Water	Status	20	---	---	User	No	No	Heals 1/16 of max HP on several turns
+Aqua Tail	Water	Physical	10	90	90	One	No	Yes	
+Arm Thrust	Fighting	Physical	20	15	100	One	No	Yes	Hits 2 to 5 times
+Aromatherapy	Grass	Status	5	---	---	Allies	No	No	Cures all status ailments
+Aromatic Mist	Fairy	Status	20	---	100	Allies	No	No	Raises Sp. Def.
+Assist	Normal	Status	20	---	---	User	No	No	The user uses a move known by an ally; those stats will be applied
+Assurance	Dark	Physical	10	60	100	One	No	Yes	If target is hit in the same turn, power doubles
+Astonish	Ghost	Physical	15	30	100	One	No	Yes	May cause flinching
+Attack Order	Bug	Physical	15	90	100	One	No	No	Higher critical-hit rate than normal
+Attract	Normal	Status	15	---	100	One	No	No	Infatuates Pokémon of opposite gender
+Aura Sphere	Fighting	Special	20	80	---	One	Yes	No	Will not miss
+Aurora Beam	Ice	Special	20	65	100	One	No	No	May lower target's Attack
+Autotomize	Steel	Status	15	---	---	User	No	No	Sharply raises Speed
+Avalanche	Ice	Physical	10	60	100	One	No	Yes	If target is hit in the same turn, power doubles
+Baby-Doll Eyes	Fairy	Status	30	---	100	One	No	No	Lowers Attack; always goes first
+Barrage	Normal	Physical	20	15	85	One	No	No	Hits 2 to 5 times
+Barrier	Psychic	Status	20	---	---	User	No	No	Sharply raises Defense
+Baton Pass	Normal	Status	40	---	---	User	No	No	Switches place with a party Pokémon
+Beat Up	Dark	Physical	10	---	100	One	No	No	The more allies on your side, the greater the damager
+Belch	Poison	Special	10	120	90	One	No	No	User must eat a Berry for this to work
+Belly Drum	Normal	Status	10	---	---	User	No	No	Attack is raised ~6 levels; HP lost equals half its max
+Bestow	Normal	Status	15	---	---	One	No	No	If target has no item, user gives its item to the target
+Bide	Normal	Physical	10	---	100	User	No	No	Damage taken for next two turns is returned doubled if user survives
+Bind	Normal	Physical	20	15	85	One	No	No	Target is hit for four or five turns
+Bite	Dark	Physical	25	60	100	One	No	Yes	May cause flinching
+Blast Burn	Fire	Special	5	150	90	One	No	No	User rests on next turn
+Blaze Kick	Fire	Physical	10	85	90	One	No	Yes	May cause a burn
+Blizzard	Ice	Special	5	110	70	Enemies	No	No	May freeze targets; no-miss when Hailing
+Block	Normal	Status	5	---	100	One	No	No	Stops target from escaping
+Blue Flare	Fire	Special	5	130	85	One	No	No	May cause a burn
+Body Slam	Normal	Physical	15	85	100	One	No	No	May cause paralysis
+Bolt Strike	Electric	Physical	5	130	85	One	No	Yes	May cause paralysis
+Bone Club	Ground	Physical	20	65	85	One	No	No	May cause flinching
+Bone Rush	Ground	Physical	10	25	90	One	No	No	Hits two to five times
+Bonemerang	Ground	Physical	10	50	90	One	No	No	Hits target exactly two times
+Boomburst	Normal	Special	10	140	100	Not User	No	No	
+Bounce	Flying	Physical	5	85	85	One	Yes	Yes	Flies high on first turn, attacks on second; may cause paralysis
+Brave Bird	Flying	Physical	15	120	100	One	Yes	Yes	Seriously damages user as well
+Brick Break	Fighting	Physical	15	75	100	One	No	Yes	Nullifies barriers (e.g. Light Screen, Reflect)
+Brine	Water	Special	10	65	100	One	No	No	When user is under 50% HP, damage doubles
+Bubble	Water	Special	30	40	100	Enemies	No	No	May lower Speed
+BubbleBeam	Water	Special	20	65	100	One	No	No	May lower Speed
+Bug Bite	Bug	Physical	20	60	100	One	No	Yes	If target holds a Berry, the user eats it for its effect
+Bug Buzz	Bug	Special	10	90	100	One	No	No	May lower Sp. Def.
+Bulk Up	Fighting	Status	20	---	---	User	No	No	Raises user's Attack and Defense
+Bulldoze	Ground	Physical	20	60	100	All but User	No	No	May lower Speed
+Bullet Punch	Steel	Physical	30	40	100	One	No	Yes	Always hits first
+Bullet Seed	Grass	Physical	30	25	100	One	No	No	Hits two to five times
+Calm Mind	Psychic	Status	20	---	---	User	No	No	Raises Sp. Atk. and Sp. Def.
+Camouflage	Normal	Status	20	---	100	User	No	No	Changes type to fit environment (i.e. Water at sea)
+Captivate	Normal	Status	20	---	100	Enemies	No	No	Harshly lowers Sp. Atk.
+Charge	Electric	Status	20	---	---	User	No	No	Powers up next Electric-type move; raises Sp. Def.
+Charge Beam	Electric	Special	10	50	90	One	No	No	Rasies Sp. Atk.
+Charm	Fairy	Status	20	---	100	One	No	No	Harshly lowers Attack
+Chatter	Flying	Special	20	65	100	One	Yes	No	May cause confusion
+Chip Away	Normal	Physical	20	70	100	One	No	Yes	Ignores stat changes affecting the target
+Circle Throw	Fighting	Physical	10	60	90	One	No	Yes	Will force another Pokémon out, or end battle in wild
+Clamp	Water	Physical	10	35	85	One	No	Yes	Hits four or five times
+Clear Smog	Poison	Special	15	50	---	One	No	No	Reverts all changed stats to normal
+Close Combat	Fighting	Physical	5	120	100	One	No	Yes	Lowers user's Defense and Sp. Def.
+Coil	Poison	Status	20	---	---	User	No	No	Raises Attack, Defense, and accuracy
+Comet Punch	Normal	Physical	15	18	85	One	No	Yes	Hits 2 to 5 times
+Confide	Normal	Status	20	---	---	One	No	No	Lowers Sp. Atk.
+Confuse Ray	Ghost	Status	10	---	100	One	No	No	Causes confusion
+Confusion	Psychic	Special	25	50	100	One	No	No	May cause confusion
+Constrict	Normal	Physical	35	10	100	One	No	Yes	May lower Speed
+Conversion	Normal	Status	30	---	---	User	No	No	User adopts the type of one of its moves
+Conversion 2	Normal	Status	30	---	---	One	No	No	Changes type to resist the last move the enemy used
+Copycat	Normal	Status	20	---	---	User	No	No	User uses the last-used moved by anyone
+Cosmic Power	Psychic	Status	20	---	---	User	No	No	Raises Defense and Sp. Def.
+Cotton Guard	Grass	Status	10	---	---	User	No	No	Drastically raises Defense
+Cotton Spore	Grass	Status	40	---	100	One	No	No	Harshly lowers Speed
+Counter	Fighting	Physical	20	---	100	Ally or Enemy	No	Yes	Counterattacks whoever hits user physically, with doubled damage
+Covet	Normal	Physical	40	60	100	One	No	Yes	Steals targets hold item, if any
+Crabhammer	Water	Physical	10	90	90	One	No	Yes	Higher critical-hit rate than normal
+Crafty Shield	Fairy	Status	10	---	---	Allies	No	No	Prevents status-affecting moves (doesn't work if the move does actual damage)
+Cross Chop	Fighting	Physical	5	100	80	One	No	Yes	Higher critical-hit rate than normal
+Cross Poison	Poison	Physical	20	70	100	One	No	Yes	Higher critical-hit rate than normal
+Crunch	Dark	Physical	15	80	100	One	No	Yes	May lower target's Defense
+Crush Claw	Normal	Physical	10	75	95	One	No	Yes	May lower target's Defense
+Crush Grip	Normal	Physical	5	---	100	One	No	Yes	The more HP the target has, the stronger this move
+Curse	Ghost	Status	10	---	---	???	No	Yes	Causes damage to user to do so repeatedly to target if user is a Ghost; if not, raises several stats
+Cut	Normal	Physical	30	50	95	One	No	Yes	
+Dark Pulse	Dark	Special	15	80	100	One	Yes	No	May cause flinching
+Dark Void	Dark	Status	10	---	80	Enemies	No	No	Causes sleep
+Dazzling Gleam	Fairy	Special	10	80	100	Enemies	No	No	
+Defend Order	Bug	Status	10	---	---	User	No	No	Raises Defense and Sp. Def.
+Defense Curl	Normal	Status	40	---	---	User	No	No	Raises Defense
+Defog	Flying	Status	15	---	---	One	No	No	Removes barriers (e.g. Light Screen, Reflect); lowers evasion
+Destiny Bond	Ghost	Status	5	---	---	User	No	No	If user faints, so will the Pokémon who caused this
+Detect	Fighting	Status	5	---	---	User	No	No	Nullifies attacks; fails more when used consecutively
+Dig	Ground	Physical	10	80	100	One	No	Yes	Two-turn (attack on second); escape dungeons in field
+Disable	Normal	Status	20	---	100	One	No	No	Stops the last-used move from being used for four turns
+Disarming Voice	Fairy	Special	15	40	---	Enemies	No	No	Never misses
+Discharge	Electric	Special	15	80	100	Not User	No	No	May cause paralysis
+Dive	Water	Physical	10	80	100	One	No	Yes	User dives on first turn and attacks on second
+Dizzy Punch	Normal	Physical	10	70	100	One	No	Yes	May cause confusion
+Doom Desire	Steel	Special	5	140	100	One	No	No	Attack occurs two turns after its use
+Double Hit	Normal	Physical	10	35	90	One	No	Yes	Hits exactly two times
+Double Kick	Fighting	Physical	30	30	100	One	No	Yes	Hits exactly two times
+Double Team	Normal	Status	15	---	---	User	No	No	Raises evasion
+Double-Edge	Normal	Physical	15	120	100	One	No	Yes	Damages user somewhat
+DoubleSlap	Normal	Physical	10	15	85	One	No	Yes	Hits two to five times
+Draco Meteor	Dragon	Special	5	130	90	One	No	No	Harshly reduces the user's Sp. Atk.
+Dragon Claw	Dragon	Physical	15	80	100	One	No	Yes	
+Dragon Dance	Dragon	Status	20	---	---	User	No	No	Boosts Attack and Speed
+Dragon Pulse	Dragon	Special	10	85	100	One	Yes	No	
+Dragon Rage	Dragon	Special	10	40	100	One	No	No	
+Dragon Rush	Dragon	Physical	10	100	75	One	No	Yes	May cause flinching
+Dragon Tail	Dragon	Physical	10	60	90	One	No	Yes	Forces out another Pokémon, or ends wild battles
+DragonBreath	Dragon	Special	20	60	100	One	No	No	May cause paralysis
+Drain Punch	Fighting	Physical	10	75	100	One	No	Yes	Absorbs HP
+Draining Kiss	Fairy	Special	10	50	100	One	No	Yes	Absorbs HP
+Dream Eater	Psychic	Special	15	100	100	One	No	No	Only hits Sleeping targets; absorbs HP
+Drill Peck	Flying	Physical	20	80	100	One	Yes	Yes	
+Drill Run	Ground	Physical	10	80	95	One	No	Yes	Higher critical-hit rate than normal
+Dual Chop	Dragon	Physical	15	40	90	One	No	Yes	Hits target exactly two times
+DynamicPunch	Fighting	Physical	5	100	50	One	No	Yes	May cause confusion
+Earth Power	Ground	Special	10	90	100	One	No	No	May lower Sp. Def.
+Earthquake	Ground	Physical	10	100	100	Not User	No	No	
+Echoed Voice	Normal	Special	15	40	100	One	No	No	Damage increases with consecutive use
+Eerie Impulse	Electric	Status	15	---	100	One	No	No	Harshly lowers Sp. Atk.
+Egg Bomb	Normal	Physical	10	100	75	One	No	No	
+Electric Terrain	Electric	Status	10	---	---	Field	No	No	Electrifies field for five turns, preventing those on the ground from falling asleep
+Electrify	Electric	Status	20	---	---	One	No	No	If the target moves second, its move is Electric-type
+Electro Ball	Electric	Special	10	---	100	One	No	No	If the target's Speed is less than the user's Speed, damage increases
+Electroweb	Electric	Special	15	55	95	Enemies	No	No	Lowers Speed
+Embargo	Dark	Status	15	---	100	One	No	No	Prevents item use; negates hold items' effects; is temporal
+Ember	Fire	Special	25	40	100	One	No	No	May cause a burn
+Encore	Normal	Status	5	---	100	One	No	No	Forces the use of the previous move for three turns
+Endeavor	Normal	Physical	5	---	100	One	No	Yes	Makes the target's HP equal the user's, if the user's is less
+Endure	Normal	Status	10	---	---	User	No	No	Allows the Pokémon to not be KO'ed, surviving with 1 HP; fails more when used consecutively
+Energy Ball	Grass	Special	10	90	100	One	No	No	May lower Sp. Def.
+Entrainment	Normal	Status	15	---	100	One	No	No	Makes the target's ability be the same as the user's
+Eruption	Fire	Special	5	---	100	Enemies	No	No	The lower the user's HP, the stronger this move
+Explosion	Normal	Physical	5	250	100	Not User	No	No	User faints when this is used
+Extrasensory	Psychic	Special	20	80	100	One	No	No	May cause flinching
+ExtremeSpeed	Normal	Physical	5	80	100	One	No	Yes	Always goes first
+Facade	Normal	Physical	20	70	100	One	No	Yes	Power is doubled if user is Poisoned, Burned, or Paralyzed
+Faint Attack	Dark	Physical	20	60	---	One	No	Yes	Never misses
+Fairy Lock	Fairy	Status	10	---	---	Field	No	No	Prevents all Pokémon from fleeing in the next turn
+Fairy Wind	Fairy	Special	30	40	100	One	No	No	
+Fake Out	Normal	Physical	10	40	100	One	No	Yes	Will cause flinching; only works on first turn
+Fake Tears	Dark	Status	20	---	100	One	No	No	Harshly lowers Sp. Def.
+False Swipe	Normal	Physical	40	40	100	One	No	Yes	Will never KO the target; they survive with 1 HP
+FeatherDance	Flying	Status	15	---	100	One	No	No	Harshly lowers Attack
+Feint	Normal	Physical	10	30	100	One	No	No	Defies Protect and Detect, still hitting the target
+Fell Stinger	Bug	Physical	25	30	100	One	No	Yes	If this KO's a target, the user's Attack sharply rises
+Fiery Dance	Fire	Special	10	80	100	One	No	No	May raise the user's Sp. Atk.
+Final Gambit	Fighting	Special	5	---	100	One	No	Yes	The user faints; damage equals the user's HP
+Fire Blast	Fire	Special	5	110	85	One	No	No	May cause a burn; no-miss when Sunny?
+Fire Fang	Fire	Physical	15	65	95	One	No	Yes	May cause flinching and/or burning
+Fire Pledge	Fire	Special	10	80	100	One	No	No	More powerful with other Pledges; with Grass Pledge, enemies lose 1/8 HP for several turns
+Fire Punch	Fire	Physical	15	75	100	One	No	Yes	May cause a burn
+Fire Spin	Fire	Special	15	35	85	One	No	No	Hits four or five times
+Fissure	Ground	Physical	5	---	30	One	No	No	Instant KO, if hit
+Flail	Normal	Physical	15	---	100	One	No	Yes	The less HP the user has, the stronger this move
+Flame Burst	Fire	Special	15	70	100	One	No	No	In Double/Triple Battles, Pokémon next to target is/are hit, too
+Flame Charge	Fire	Physical	20	50	100	One	No	Yes	Raises the user's Speed
+Flame Wheel	Fire	Physical	25	60	100	One	No	Yes	May cause a burn
+Flamethrower	Fire	Special	15	90	100	One	No	No	May cause a burn
+Flare Blitz	Fire	Physical	15	120	100	One	No	Yes	May cause a burn; user takes serious damage
+Flash	Normal	Status	20	---	100	One	No	No	Lowers accuracy
+Flash Cannon	Steel	Special	10	80	100	One	No	No	May lower Sp. Def.
+Flatter	Dark	Status	15	---	100	One	No	No	Confuses the target, but raises Sp. Atk.
+Fling	Dark	Physical	10	---	100	One	No	No	Throws held item at target, who will catch and hold it
+Flower Shield	Fairy	Status	10	---	---	Field	No	No	All Grass-types in battle get a Defense boost
+Fly	Flying	Physical	15	90	95	One	Yes	Yes	Flies high on first turn, attacks on second
+Flying Press	Fighting	Physical	10	80	95	One	No	Yes	Counts as both a Flying and Fighting type move
+Focus Blast	Fighting	Special	5	120	70	One	No	No	May lower Sp. Def.
+Focus Energy	Normal	Status	30	---	---	User	No	No	Increases the user's critical-hit rate
+Focus Punch	Fighting	Physical	20	150	100	One	No	Yes	Two-turn (attack on second); if hit before attacking, this fails
+Follow Me	Normal	Status	20	---	100	User	No	No	Only the user will be attacked by the enemy now
+Force Palm	Fighting	Physical	10	60	100	One	No	Yes	May cause paralysis
+Foresight	Normal	Status	40	---	100	One	No	No	Makes Ghosts hittable with Normal/Fighting moves
+Forest's Curse	Grass	Status	20	---	100	One	No	No	Afflicted Pokémon become the Grass-type
+Foul Play	Dark	Physical	15	95	100	One	No	Yes	The higher the target's Attack, the more damage is dealt
+Freeze Shock	Ice	Physical	5	140	90	One	No	No	May cause freezing
+Freeze-Dry	Ice	Special	20	70	100	One	No	No	May cause freezing; super-effective on Water-types!
+Frenzy Plant	Grass	Special	5	150	90	One	No	No	User rests on next turn
+Frost Breath	Ice	Special	10	60	90	One	No	No	Always critical
+Frustration	Normal	Physical	20	---	100	One	No	Yes	Less Happiness = more damage
+Fury Attack	Normal	Physical	20	15	85	One	No	Yes	Attacks two to five times
+Fury Cutter	Bug	Physical	20	40	95	One	No	Yes	Increases in power with consecutive use
+Fury Swipes	Normal	Physical	15	18	80	One	No	Yes	Hits two to five times
+Fusion Bolt	Electric	Physical	5	100	100	One	No	No	Greater damage when influenced by enormous flame?
+Fusion Flare	Fire	Special	5	100	100	One	No	No	Greater damage when influenced by enormous thunderbolt?
+Future Sight	Psychic	Special	10	120	100	One	No	No	Attack occurs two turns after its use
+Gastro Acid	Poison	Status	10	---	100	One	No	No	Nullifies the target's ability(s)
+Gear Grind	Steel	Physical	15	50	85	One	No	Yes	
+Geomancy	Fairy	Status	10	---	---	User	No	No	Sharply raises Sp. Atk., Sp. Def., and Speed on next turn
+Giga Drain	Grass	Special	10	75	100	One	No	No	Absorbs HP
+Giga Impact	Normal	Physical	5	150	90	One	No	Yes	User rests on next turn
+Glaciate	Ice	Special	10	65	95	Enemies	No	No	Lowers Speed
+Glare	Normal	Status	30	---	100	One	No	No	Causes paralysis
+Grass Knot	Grass	Special	20	---	100	One	No	Yes	Heavier targets take greater damage
+Grass Pledge	Grass	Special	10	80	100	One	No	No	More powerful with other Pledges
+GrassWhistle	Grass	Status	15	---	55	One	No	No	Causes Sleep
+Grassy Terrain	Grass	Status	10	---	---	Field	No	No	For five turns, Pokémon on the ground regain a little HP each turn
+Gravity	Psychic	Status	5	---	---	Field	No	No	Negates Flying and Levitate
+Growl	Normal	Status	40	---	100	Enemies	No	No	Lowers Attack
+Growth	Normal	Status	40	---	---	User	No	No	Raises Attack and Sp.Atk.
+Grudge	Ghost	Status	5	---	100	User	No	No	If the user faints, the move of the target that caused it goes to 0 PP
+Guard Split	Psychic	Status	10	---	---	One	No	No	Averages the user's and target's Defense and Sp. Def.
+Guard Swap	Psychic	Status	10	---	---	One	No	No	Swaps Defense and Sp. Def. with the target
+Guillotine	Normal	Physical	5	---	30	One	No	No	Can cause an instant KO
+Gunk Shot	Poison	Physical	5	120	80	One	No	No	Can cause Poison
+Gust	Flying	Special	35	40	100	One	Yes	No	
+Gyro Ball	Steel	Physical	5	---	100	One	No	Yes	Slower users deal greater damager
+Hail	Ice	Status	10	---	---	Field	No	No	Makes it Hail for five turns; non-Ice types lose 1/16 HP each turn; Blizzard is no-miss
+Hammer Arm	Fighting	Physical	10	100	90	One	No	Yes	Lowers the user's Speed
+Harden	Normal	Status	30	---	---	User	No	No	Raises Defense
+Haze	Ice	Status	30	---	---	Field	No	No	Eliminates all stat alterations, good or bad, for all
+Head Charge	Normal	Physical	15	120	100	One	No	Yes	Can damage the user a little
+Head Smash	Rock	Physical	5	150	80	One	No	Yes	Seriously damages the user
+Headbutt	Normal	Physical	15	70	100	One	No	Yes	Can cause flinching
+Heal Bell	Normal	Status	5	---	---	Allies	No	No	Heals all status ailments
+Heal Block	Psychic	Status	15	---	100	Enemies	No	No	Prevents the enemies from healing HP except through normal items
+Heal Order	Bug	Status	10	---	---	User	No	No	Recovers up to 50% of the max HP
+Heal Pulse	Psychic	Status	10	---	---	One	Yes	No	The target regains up to 50% of its max HP
+Healing Wish	Psychic	Status	10	---	---	User	No	No	The user faints, with the Pokémon replacing it coming with full HP and cured ailments
+Heart Stamp	Psychic	Physical	25	60	100	One	No	Yes	May cause flinching
+Heart Swap	Psychic	Status	10	---	---	One	No	No	Stat alterations are exchanged
+Heat Crash	Fire	Physical	10	---	100	One	No	Yes	The more the user outweighs the target, the higher the damage
+Heat Wave	Fire	Special	10	95	90	Enemies	No	No	May cause a burn
+Heavy Slam	Steel	Physical	10	---	100	One	No	Yes	The more the user outweighs the target, the higher the damage
+Helping Hand	Normal	Status	20	---	---	Ally	No	No	Boosts the power of an ally's attack
+Hex	Ghost	Special	10	60	100	One	No	No	More powerful on a target with status ailments
+Hi Jump Kick	Fighting	Physical	10	130	90	One	No	Yes	Hurts user if it misses
+Hidden Power	Normal	Special	15	60	100	One	No	No	Varies depending on Pokémon species and Ivs
+Hone Claws	Dark	Status	15	---	---	One	No	No	Raises Attack and accuracy
+Horn Attack	Normal	Physical	25	65	100	One	No	Yes	
+Horn Drill	Normal	Physical	5	---	30	One	No	Yes	May KO instantly
+Horn Leech	Grass	Physical	10	75	100	One	No	Yes	Absorbs HP
+Howl	Normal	Status	40	---	---	User	No	No	Raises Attack
+Hurricane	Flying	Special	10	110	70	One	Yes	No	May cause confusion
+Hydro Cannon	Water	Special	5	150	90	One	No	No	User rests on next turn
+Hydro Pump	Water	Special	5	110	80	One	No	No	
+Hyper Beam	Normal	Special	5	150	90	One	No	No	User rests on next turn
+Hyper Fang	Normal	Physical	15	80	90	One	No	Yes	May cause flinching
+Hyper Voice	Normal	Special	10	90	100	Enemies	No	No	
+Hypnosis	Psychic	Status	20	---	60	One	No	No	Causes Sleep
+Ice Ball	Ice	Physical	20	30	90	One	No	Yes	Hits two to five times; gets stronger with each use
+Ice Beam	Ice	Special	10	90	100	One	No	No	May cause freezing
+Ice Burn	Ice	Special	5	140	90	One	No	No	May cause freezing
+Ice Fang	Ice	Physical	15	65	95	One	No	Yes	May cause freezing or flinching
+Ice Punch	Ice	Physical	15	75	100	One	No	Yes	May cause freezing
+Ice Shard	Ice	Physical	30	40	100	One	No	No	Always goes first
+Icicle Crash	Ice	Physical	10	85	90	One	No	No	May cause flinching
+Icicle Spear	Ice	Physical	30	25	100	One	No	No	Hits two to five times
+Icy Wind	Ice	Special	15	55	95	Enemies	No	No	Lowers Speed
+Imprison	Psychic	Status	10	---	100	User	No	No	Prevents the use of moves the user knows
+Incinerate	Fire	Special	15	30	100	Enemies	No	No	Destroys Berry the target may be holding
+Inferno	Fire	Special	5	100	50	One	No	No	May cause a burn
+Infestation	Bug	Special	35	20	100	One	No	No	Attacks for four or five turns and prevents fleeing
+Ingrain	Grass	Status	20	---	---	User	No	No	User gains some HP each turn, but cannot leave the field
+Ion Deluge	Electric	Status	25	---	---	Not User	No	No	Changes Normal-type moves to Electric-type moves
+Iron Defense	Steel	Status	15	---	---	User	No	No	Sharply raises Defense
+Iron Head	Steel	Physical	15	80	100	One	No	Yes	May cause flinching
+Iron Tail	Steel	Physical	15	100	75	One	No	Yes	May lower Defense
+Judgment	Normal	Special	10	100	100	One	No	No	Type depends on the user's Plate
+Jump Kick	Fighting	Physical	10	100	95	One	No	Yes	The user is hurt if this misses
+Karate Chop	Fighting	Physical	25	50	100	One	No	Yes	Higher critical-hit rate than normal
+Kinesis	Psychic	Status	15	---	80	One	No	No	Lowers accuracy
+King's Shield	Steel	Status	10	---	---	User	No	No	Nullifies damage and harshly lowers the Attack of attackers
+Knock Off	Dark	Physical	20	55	100	One	No	Yes	Target loses hold item until battle ends
+Land's Wrath	Ground	Physical	10	90	100	Enemies	No	No	
+Last Resort	Normal	Physical	5	140	100	One	No	Yes	Only usable when all other moves it knows have been used
+Lava Plume	Fire	Special	15	80	100	Not User	No	No	May cause a burn
+Leaf Blade	Grass	Physical	15	90	100	One	No	Yes	Higher critical-hit rate than normal
+Leaf Storm	Grass	Special	5	130	90	One	No	No	The Sp. Atk. of the user is harshly lowered
+Leaf Tornado	Grass	Special	10	65	90	One	No	No	May lower accuracy
+Leech Life	Bug	Physical	15	20	100	One	No	Yes	Absorbs HP
+Leech Seed	Grass	Status	10	---	90	One	No	No	Absorbs HP each turn
+Leer	Normal	Status	30	---	100	Enemies	No	No	Lowers Defense
+Lick	Ghost	Physical	30	30	100	One	No	Yes	May paralyze
+Light Screen	Psychic	Status	30	---	---	Allies	No	Yes	Lessens damage from Special attacks for five turns
+Lock-On	Normal	Status	5	---	100	One	No	No	Next attack will not miss
+Lovely Kiss	Normal	Status	10	---	75	One	No	No	Target falls asleep
+Low Kick	Fighting	Physical	20	---	100	One	No	Yes	Stronger on heavier targets
+Low Sweep	Fighting	Physical	20	65	100	One	No	Yes	Lowers Speed
+Lucky Chant	Normal	Status	30	---	---	Allies	No	No	Your allies cannot be hit critically
+Lunar Dance	Psychic	Status	10	---	---	User	No	No	The user faints and the Pokémon replacing it has full HP and all ailments cured
+Luster Purge	Psychic	Special	5	70	100	One	No	No	May lower Sp. Def.
+Mach Punch	Fighting	Physical	30	40	100	One	No	Yes	Will always strike first
+Magic Coat	Psychic	Status	15	---	---	User	No	No	Makes moves like Leech Seed and status-affectors hit the user
+Magic Room	Psychic	Status	10	---	---	Allies	No	No	Hold items are ineffective for five turns
+Magical Leaf	Grass	Special	20	60	---	One	No	No	Never misses
+Magma Storm	Fire	Special	5	120	75	One	No	No	Hits four or five times
+Magnet Bomb	Steel	Physical	20	60	---	One	No	No	Never misses
+Magnet Rise	Electric	Status	10	---	---	User	No	No	User is not affected by Ground moves for five turns
+Magnetic Flux	Electric	Status	20	---	---	Allies	No	No	Pokémon with the Plus or Minus abilities get a Defense and Sp. Def. boost
+Magnitude	Ground	Physical	30	---	100	Not User	No	No	Power is variable and random
+Mat Block	Fighting	Status	15	---	---	Allies	No	No	Protects from damaging - but not status - moves
+Me First	Normal	Status	20	---	---	?	?	?	The user uses the target's move on the target, with more power
+Mean Look	Normal	Status	5	---	100	One	No	No	Target cannot flee
+Meditate	Psychic	Status	40	---	---	User	No	No	Raises Attack
+Mega Drain	Grass	Special	15	40	100	One	No	No	Absorbs HP
+Mega Kick	Normal	Physical	5	120	75	One	No	Yes	
+Mega Punch	Normal	Physical	20	80	85	One	No	Yes	
+Megahorn	Bug	Physical	10	120	85	One	No	Yes	
+Memento	Dark	Status	10	---	100	One	No	No	Harshly lowers Attack and Sp. Atk., but the user faints
+Metal Burst	Steel	Physical	10	---	100	?	No	No	Retaliates against the last Pokémon to attack it, but with greater power
+Metal Claw	Steel	Physical	35	50	95	One	No	Yes	Raises Attack, possibly
+Metal Sound	Steel	Status	40	---	85	One	No	No	Lowers Sp. Def.
+Meteor Mash	Steel	Physical	10	90	90	One	No	Yes	Can raise the user's Attack
+Metronome	Normal	Status	10	---	---	User	No	No	Randomly uses (practically) any move possible
+Milk Drink	Normal	Status	10	---	---	User	No	No	Restores HP by up to half the max; can be used in field
+Mimic	Normal	Status	10	---	100	One	No	No	Uses the target's last-used move on itself
+Mind Reader	Normal	Status	5	---	100	One	No	No	The next move will not miss
+Minimize	Normal	Status	10	---	---	User	No	No	Raises evasion sharply
+Miracle Eye	Psychic	Status	40	---	---	One	No	No	Lets Dark-types be hit with Psychic moves
+Mirror Coat	Psychic	Special	20	---	100	?	No	No	Counters any Special-class attack with double power
+Mirror Move	Flying	Status	20	---	---	One	No	No	Uses the target's last-used move on itself
+Mirror Shot	Steel	Special	10	65	85	One	No	No	May lower accuracy
+Mist	Ice	Status	30	---	---	Allies	No	No	Prevents stat reductions on your party for five turns
+Mist Ball	Psychic	Special	5	70	100	One	No	No	May lower Sp. Atk.
+Misty Terrain	Fairy	Status	10	---	---	Field	No	No	Pokémon on the ground cannot get ailments for five turns
+Moonblast	Fairy	Special	15	95	100	One	No	No	May lower Sp. Atk.
+Moonlight	Fairy	Status	5	---	---	User	No	No	Restores HP; amount is weather-dependent
+Morning Sun	Normal	Status	5	---	---	User	No	No	Restores HP; amount is weather-dependent
+Mud Bomb	Ground	Special	10	65	85	One	No	No	May lower accuracy
+Mud Shot	Ground	Special	15	55	95	One	No	No	May lower Speed
+Mud Sport	Ground	Status	15	---	100	Field	No	No	Weakens Electric-type moves
+Muddy Water	Water	Special	10	90	85	Enemies	No	No	May lower accuracy
+Mud-Slap	Ground	Special	10	20	100	One	No	No	May lower accuracy
+Mystical Fire	Fire	Special	10	65	100	One	No	No	May lower Sp. Atk.
+Nasty Plot	Dark	Status	20	---	---	User	No	No	Raises the user's Sp. Atk.
+Natural Gift	Normal	Physical	15	---	100	One	No	No	The held Berry determines move type and power
+Nature Power	Normal	Status	20	---	---	?	No	No	Varies upon the environment in which it is used
+Needle Arm	Grass	Physical	15	60	100	One	No	Yes	May cause flinching
+Night Daze	Dark	Special	10	85	95	One	No	No	May lower accuracy
+Night Shade	Ghost	Special	15	---	100	One	No	No	
+Night Slash	Dark	Physical	15	70	100	One	No	Yes	Higher critical-hit rate than normal
+Nightmare	Ghost	Status	15	---	100	One	No	No	Sleeping targets take damage with each turn until awakening
+Noble Roar	Normal	Status	30	---	100	One	No	No	Lowers Attack and Sp. Atk.
+Nuzzle	Electric	Physical	20	20	100	One	No	Yes	Will paralyze (as well as slightly damage)
+Oblivion Wing	Flying	Special	10	80	100	One	No	Yes	Absorbs HP
+Octazooka	Water	Special	10	65	85	One	No	No	May lower accuracy
+Odor Sleuth	Normal	Status	40	---	100	One	No	No	Allows Ghost-types to be hit by Normal/Fighting moves
+Ominous Wind	Ghost	Special	5	60	100	One	No	No	May raise all of the user's stats
+Outrage	Dragon	Physical	15	120	100	One (Random)	No	Yes	Attacks two or three times, then the user is confused
+Overheat	Fire	Special	5	130	90	One	No	No	Harshly lowers the Sp. Atk. of the user
+Pain Split	Normal	Status	20	---	100	One	No	No	The user's and target's HP are averaged out
+Parabolic Charge	Electric	Special	20	50	100	Not User	No	No	Absorbs HP
+Parting Shot	Dark	Status	20	---	100	One	No	No	Lowers the target's Attack and Sp. Atk., then the user switches out
+Pay Day	Normal	Physical	20	40	100	One	No	No	Coins are thrown to cause damage; money is earned after the battle
+Payback	Dark	Physical	10	50	100	One	No	Yes	Power doubles if the user moves second
+Peck	Flying	Physical	35	35	100	One	Yes	Yes	
+Perish Song	Normal	Status	5	---	---	Not User	Yes	No	Those hearing this are KO'ed in three turns unless they switch out
+Petal Blizzard	Grass	Physical	15	90	100	Not User	No	No	
+Petal Dance	Grass	Special	10	120	100	One (Random)	No	Yes	Attacks two or three times, then the user is confused
+Phantom Force	Ghost	Physical	10	90	100	One	No	Yes	Two-turn; attacks on second, regardless of Protect/etc.
+Pin Missile	Bug	Physical	20	25	95	One	No	No	Hits two to five times
+Play Nice	Normal	Status	20	---	---	One	No	No	Lowers Attack
+Play Rough	Fairy	Physical	10	90	90	One	No	Yes	May lower Attack
+Pluck	Flying	Physical	20	60	100	One	Yes	Yes	The user can take the target's Berry and use its effect
+Poison Fang	Poison	Physical	15	50	100	One	No	Yes	May cause Poison
+Poison Gas	Poison	Status	40	---	90	Enemies	No	No	May cause Poison
+Poison Jab	Poison	Physical	20	80	100	One	No	Yes	May cause Poison
+Poison Sting	Poison	Physical	35	15	100	One	No	No	May cause Poison
+Poison Tail	Poison	Physical	25	50	100	One	No	Yes	May cause Poison; higher critical-hit rate than normal
+PoisonPowder	Poison	Status	35	---	75	One	No	No	May cause Poison
+Pound	Normal	Physical	35	40	100	One	No	Yes	
+Powder	Bug	Status	20	---	100	One	No	No	Causes severe damage to the target if it uses a Fire-type move
+Powder Snow	Ice	Special	25	40	100	Enemies	No	No	May cause freezing
+Power Gem	Rock	Special	20	80	100	One	No	No	
+Power Split	Psychic	Status	10	---	---	One	No	No	Averages the user's and target's Attack and Sp. Atk.
+Power Swap	Psychic	Status	10	---	---	One	No	No	Swaps the user's and target's Attack and Sp. Atk.
+Power Trick	Psychic	Status	10	---	---	User	No	No	Switches Attack and Defense
+Power Whip	Grass	Physical	10	120	85	One	No	Yes	
+Power-Up Punch	Fighting	Physical	30	40	100	One	No	Yes	Hitting targets raises Attack
+Present	Normal	Physical	15	---	90	One	No	No	May damage, or may heal - it's a mystery!
+Protect	Normal	Status	10	---	---	User	No	No	Nullifies attacks; fails more when used consecutively
+Psybeam	Psychic	Special	20	65	100	One	No	No	May cause confusion
+Psych Up	Normal	Status	10	---	---	One	No	No	Copies stat changes on the target
+Psychic	Psychic	Special	10	90	100	One	No	No	May lower Sp. Def.
+Psycho Boost	Psychic	Special	5	140	90	One	No	No	Harshly lowers Sp. Atk. on the user
+Psycho Cut	Psychic	Physical	20	70	100	One	No	No	Higher critical-hit rate than normal
+Psycho Shift	Psychic	Status	10	---	90	One	No	No	Transfers ailments to target
+Psyshock	Psychic	Special	10	80	100	One	No	No	Deals physical damage
+Psystrike	Psychic	Special	10	100	100	One	No	No	Deals physical damage
+Psywave	Psychic	Special	15	---	80	One	No	No	Power varies
+Punishment	Dark	Physical	5	---	100	One	No	Yes	The more stat increases on the target, the stronger this move
+Pursuit	Dark	Physical	20	40	100	One	No	Yes	Inflicts double damage on those switching out of battle
+Quash	Dark	Status	15	---	100	One	No	Yes	The target will go last
+Quick Attack	Normal	Physical	30	40	100	One	No	Yes	Will always strike first
+Quick Guard	Fighting	Status	15	---	---	Allies	No	No	Protects from priority moves; fails when used in succession
+Quiver Dance	Bug	Status	20	---	---	User	No	No	Raises Speed, Sp. Atk., and Sp. Def.
+Rage	Normal	Physical	20	20	100	One	No	Yes	When in use, the user's Attack goes up when hit
+Rage Powder	Bug	Status	20	---	---	User	No	No	Only the user will be attacked by the enemy now
+Rain Dance	Water	Status	5	---	---	Field	No	No	Makes it rain, powering up Water, weakening Fire, and making Thunder no-miss
+Rapid Spin	Normal	Physical	40	20	100	One	No	Yes	Will negate Bind, Wrap, Leech Seed, Spikes, and so on
+Razor Leaf	Grass	Physical	25	55	95	Enemies	No	No	Higher critical-hit rate than normal
+Razor Shell	Water	Physical	10	75	95	One	No	Yes	May lower Defense
+Razor Wind	Normal	Special	10	80	100	Enemies	No	No	Attack hits on second turn; higher critical-hit rate than normal
+Recover	Normal	Status	10	---	---	User	No	No	Recovers up to 50% of the max HP
+Recycle	Normal	Status	10	---	100	User	No	No	Allows a hold item to be reused
+Reflect	Psychic	Status	20	---	---	Allies	No	No	Weakens Physical-class attacks for five turns
+Reflect Type	Normal	Status	15	---	---	One	No	No	User becomes the type of the target
+Refresh	Normal	Status	20	---	100	User	No	No	Cures Poison, Burn, and Paralysis
+Relic Song	Normal	Special	10	75	100				
+Rest	Psychic	Status	10	---	---	User	No	No	Restores all HP and ailments, but user goes to sleep
+Retaliate	Normal	Physical	5	70	100	One	No	Yes	If an ally fainted last turn, this move is more powerful
+Return	Normal	Physical	20	---	100	One	No	Yes	More Happiness = more damage
+Revenge	Fighting	Physical	10	60	100	One	No	Yes	Power doubles if the user is hurt in the same turn
+Reversal	Fighting	Physical	15	---	100	One	No	Yes	Less HP on the user = more damage
+Roar	Normal	Status	20	---	---	One	No	No	Forces the target to switch; ends wild battles
+Roar of Time	Dragon	Special	5	150	90	One	No	No	User rests on next turn
+Rock Blast	Rock	Physical	10	25	90	One	No	No	Hits two to five times
+Rock Climb	Normal	Physical	20	90	85	One	No	Yes	May cause confusion
+Rock Polish	Rock	Status	20	---	---	User	No	No	Sharply raises Speed
+Rock Slide	Rock	Physical	10	75	90	Enemies	No	No	May cause flinching
+Rock Smash	Fighting	Physical	15	40	100	One	No	Yes	May lower Defense
+Rock Throw	Rock	Physical	15	50	90	One	No	No	
+Rock Tomb	Rock	Physical	10	60	95	One	No	No	Lowers Speed
+Rock Wrecker	Rock	Physical	5	150	90	One	No	No	User rests on next turn
+Role Play	Psychic	Status	10	---	---	One	No	No	Copies the target's ability
+Rolling Kick	Fighting	Physical	15	60	85	One	No	Yes	May cause flinching
+Rollout	Rock	Physical	20	30	90	One	No	Yes	Hits two to five times; gets stronger with each use
+Roost	Flying	Status	10	---	---	User	No	No	Heals up to 50% of the max HP, but loses Flying-type designation
+Rototiller	Ground	Status	10	---	---	Field	No	No	Grass Pokémon get a boost in Attack and Sp. Atk.
+Round	Normal	Special	15	60	100	One	No	No	The more allies using Round, the greater the damage
+Sacred Fire	Fire	Physical	5	100	95	One	No	No	May cause a burn
+Sacred Sword	Fighting	Physical	20	90	100	One	No	Yes	Stat changes don't affect this move
+Safeguard	Normal	Status	25	---	---	Allies	No	No	Prevents ailments for five turns
+Sand Tomb	Ground	Physical	15	35	85	One	No	No	Keeps target bound and damaged for four or five turns
+Sand-Attack	Ground	Status	15	---	100	One	No	No	Lowers accuracy
+Sandstorm	Rock	Status	10	---	---	Field	No	No	Hurts Pokémon not of the Rock-, Steel,- or Ground-types for 1/16 of their HP each turn for five turns
+Scald	Water	Special	15	80	100	One	No	No	May cause a burn
+Scary Face	Normal	Status	10	---	100	One	No	No	Harshly lowers Speed
+Scratch	Normal	Physical	35	40	100	One	No	Yes	
+Screech	Normal	Status	40	---	85	One	No	No	Harshly lowers Defense
+Searing Shot	Fire	Special	5	100	100	Not User	No	No	May cause a burn
+Secret Power	Normal	Physical	20	70	100	One	No	No	Additional effects are environment-dependent
+Secret Sword	Fighting	Special	10	85	100	One	No	Yes	
+Seed Bomb	Grass	Physical	15	80	100	One	No	No	
+Seed Flare	Grass	Special	5	120	85	One	No	No	May harshly lower Sp. Def.
+Seismic Toss	Fighting	Physical	20	---	100	One	No	Yes	
+Selfdestruct	Normal	Physical	5	200	100	Not User	No	No	User faints when this is used
+Shadow Ball	Ghost	Special	15	80	100	One	No	No	May lower Sp. Def.
+Shadow Claw	Ghost	Physical	15	70	100	One	No	Yes	Higher critical-hit rate than normal
+Shadow Force	Ghost	Physical	5	120	100	One	No	Yes	Two-turn, attacking on second, regardless of Protect/etc.
+Shadow Punch	Ghost	Physical	20	60	---	One	No	Yes	Always hits
+Shadow Sneak	Ghost	Physical	30	40	100	One	No	Yes	Always hits first
+Sharpen	Normal	Status	30	---	---	User	No	No	Raises Attack
+Sheer Cold	Ice	Special	5	---	30	One	No	No	Will instantly KO if hit
+Shell Smash	Normal	Status	15	---	---	User	No	No	Lowers Defense and Sp. Def., but raises Attack, Speed, and Sp. Atk.
+Shift Gear	Steel	Status	10	---	---	User	No	No	Raises Attack; sharply raises Speed
+Shock Wave	Electric	Special	20	60	---	One	No	No	No-miss
+Signal Beam	Bug	Special	15	75	100	One	No	No	May cause confusion
+Silver Wind	Bug	Special	5	60	100	One	No	No	May raise all of the user's stats
+Simple Beam	Normal	Status	15	---	100	One	No	No	Changes ability to Simple
+Sing	Normal	Status	15	---	55	One	No	No	Causes Sleep
+Sketch	Normal	Status	1	---	---	One	No	No	Permanently learns the target's last-used move
+Skill Swap	Psychic	Status	10	---	100	One	No	No	Exchanges abilities with target
+Skull Bash	Normal	Physical	15	130	100	One	No	Yes	Raises Defense one turn, and attacks the next
+Sky Attack	Flying	Physical	5	140	90	One	Yes	No	Two-turn; higher critical-hit rate than normal; may cause flinching
+Sky Drop	Flying	Physical	10	60	100	One	Yes	Yes	Two-turn (user and target fly high on first, attack on second)
+Sky Uppercut	Fighting	Physical	15	85	90	One	No	Yes	
+Slack Off	Normal	Status	10	---	100	User	No	No	Heals up to half of the maximum HP
+Slam	Normal	Physical	20	80	75	One	No	Yes	
+Slash	Normal	Physical	20	70	100	One	No	Yes	Higher critical-hit rate than normal
+Sleep Powder	Grass	Status	15	---	75	One	No	No	Induces Sleep
+Sleep Talk	Normal	Status	10	---	---	User	No	No	When asleep, another known move (at random) is used
+Sludge	Poison	Special	20	65	100	One	No	No	May poison
+Sludge Bomb	Poison	Special	10	90	100	One	No	No	May poison
+Sludge Wave	Poison	Special	10	95	100	Not User	No	No	May poison
+Smack Down	Rock	Physical	15	50	100	One	No	No	Nullifies Flying-type designation
+SmellingSalt	Normal	Physical	10	60	100	One	No	Yes	Hits for double damage on paralyzed targets, but the paralysis will be cured
+Smog	Poison	Special	20	30	70	One	No	No	May poison
+SmokeScreen	Normal	Status	20	---	100	One	No	No	Lowers accuracy
+Snarl	Dark	Special	15	55	95	Not User	No	No	Lowers Sp. Atk.
+Snatch	Dark	Status	10	---	100	User	No	No	If the target heals or changes stats, the user steals its effect
+Snore	Normal	Special	15	50	100	One	No	No	Only works if asleep; may cause flinching
+Soak	Water	Status	20	---	100	One	No	No	Will make the opponent become a Water-type
+Softboiled	Normal	Status	10	---	---	User	No	No	Heals up to 50% of the max HP; can be used in field
+SolarBeam	Grass	Special	10	120	100	One	No	No	Two-turn, charge on first, attack on second; if Sunny, attack is immediate
+SonicBoom	Normal	Special	20	20	90	One	No	No	
+Spacial Rend	Dragon	Special	5	100	95	One	No	No	Higher critical-hit rate than normal
+Spark	Electric	Physical	20	65	100	One	No	Yes	May cause paralysis
+Spider Web	Bug	Status	10	---	100	One	No	No	Prevents escape
+Spike Cannon	Normal	Physical	15	20	100	One	No	No	Hits two to five times
+Spikes	Ground	Status	20	---	---	Enemies	No	No	Hurts Pokémon that switch into battle
+Spiky Shield	Grass	Status	10	---	---	User	No	No	Protects user from attacks and damages contact attackers
+Spit Up	Normal	Special	10	---	100	One	No	No	Uses Stockpiled stuff as an attack; more Stockpiled, more damage
+Spite	Ghost	Status	10	---	100	One	No	No	Takes 4 PP off the last-used move
+Splash	Normal	Status	40	---	---	User	No	No	Absolutely no effect!
+Spore	Grass	Status	15	---	100	One	No	No	Causes sleep
+Stealth Rock	Rock	Status	20	---	---	Enemies	No	No	Hurts Pokémon that switch into battle
+Steamroller	Bug	Physical	20	65	100	One	No	Yes	May cause flinching
+Steel Wing	Steel	Physical	25	70	90	One	No	Yes	Lowers Defense
+Sticky Web	Bug	Physical	20	---	---	Enemies	No	No	Lowers Speed of enemies upon switching into battle
+Stockpile	Normal	Status	20	---	---	User	No	No	Stockpiles up to three units of stuff, raising Defense and Sp. Def. each time
+Stomp	Normal	Physical	20	65	100	One	No	Yes	May cause flinching
+Stone Edge	Rock	Physical	5	100	80	One	No	No	Higher critical-hit rate than normal
+Stored Power	Psychic	Special	10	20	100	One	No	No	The higher the user's stats are raised, the more damage
+Storm Throw	Fighting	Physical	10	60	100	One	No	Yes	Always critical
+Strength	Normal	Physical	15	80	100	One	No	Yes	
+String Shot	Bug	Status	40	---	95	Enemies	No	No	Lowers Speed
+Struggle	-	Physical	-	50	100	One (Random)	No	Yes	Only works if PP is zero on all moves; hurts the user
+Struggle Bug	Bug	Special	20	50	100	Enemies	No	No	May lower Special Attack
+Stun Spore	Grass	Status	30	---	75	One	No	No	May cause paralysis
+Submission	Fighting	Physical	25	80	80	One	No	Yes	Hurts user slightly
+Substitute	Normal	Status	10	---	---	User	No	No	User sacrifices some HP to make a decoy
+Sucker Punch	Dark	Physical	5	80	100	One	No	Yes	Attacks first, but fails if the target is not readying an attack
+Sunny Day	Fire	Status	5	---	---	Field	No	No	Makes it Sunny for five turns, weakening Water while boosting Fire; SolarBeam needs no charge; makes Fire Blast no-miss?
+Super Fang	Normal	Physical	10	---	90	One	No	Yes	Halves HP
+Superpower	Fighting	Physical	5	120	100	One	No	Yes	Lowers the user's Attack and Defense
+Supersonic	Normal	Status	20	---	55	One	No	No	May cause confusion
+Surf	Water	Special	15	90	100	Not User	No	Yes	
+Swagger	Normal	Status	15	---	90	One	No	No	Confuses the target, but sharply raises Attack
+Swallow	Normal	Status	10	---	---	User	No	No	Swallows Stockpiled stuff to heal HP
+Sweet Kiss	Fairy	Status	10	---	75	One	No	No	Causes confusion
+Sweet Scent	Normal	Status	20	---	100	Enemies	No	No	Lowers evasion; in field, can cause Horde Battles
+Swift	Normal	Special	20	60	---	Enemies	No	No	Never misses
+Switcheroo	Dark	Status	10	---	100	One	No	No	User and target trade hold items
+Swords Dance	Normal	Status	20	---	---	User	No	No	Sharply raises Attack
+Synchronoise	Psychic	Special	15	120	100	Not User	No	No	All Pokémon of the user's type take damage
+Synthesis	Grass	Status	5	---	---	User	No	No	User recovers HP; amount is weather-dependent
+Tackle	Normal	Physical	35	50	100	One	No	Yes	
+Tail Glow	Bug	Status	20	---	100	User	No	No	Drastically raises Sp. Atk.
+Tail Slap	Normal	Physical	10	25	85	One	No	Yes	Hits two to five times
+Tail Whip	Normal	Status	30	---	100	Enemies	No	No	Lowers Defense
+Tailwind	Flying	Status	30	---	---	Allies	No	No	Raises Speed
+Take Down	Normal	Physical	20	90	85	One	No	Yes	Damages user slightly
+Taunt	Dark	Status	20	---	100	One	No	No	Target can only use attack moves for three turns
+Techno Blast	Normal	Special	5	85	100	One	No	No	Type depends on held Drive
+Teeter Dance	Normal	Status	20	---	100	Not User	No	No	Causes confusion
+Telekinesis	Psychic	Status	15	---	---	One	No	No	Lowers evasion greatly for three turns
+Teleport	Psychic	Status	20	---	---	User	No	No	Leaves battle; returns to last Pokémon Center in field
+Thief	Dark	Physical	10	60	100	One	No	Yes	Steals held item, if the user lacks one
+Thrash	Normal	Physical	10	120	100	One (Random)	No	Yes	The user attacks for two or three turns, then is confused
+Thunder	Electric	Special	10	110	70	One	No	No	May cause paralysis; no-miss in Rain
+Thunder Fang	Electric	Physical	15	65	95	One	No	Yes	May cause flinching or paralysis
+Thunder Wave	Electric	Status	20	---	100	One	No	No	Will cause paralysis
+Thunderbolt	Electric	Special	15	90	100	One	No	No	May cause paralysis
+ThunderPunch	Electric	Physical	15	75	100	One	No	Yes	May cause paralysis
+ThunderShock	Electric	Special	30	40	100	One	No	No	May cause paralysis
+Tickle	Normal	Status	20	---	100	One	No	No	Lowers Attack and Defense
+Topsy-Turvy	Dark	Status	20	---	100	One	No	No	Stat changes become opposite (i.e. lowered stats are raised by that same amount)
+Torment	Dark	Status	15	---	100	One	No	No	Cannot use same move twice in a row
+Toxic	Poison	Status	10	---	90	One	No	No	Causes Bad Poison (Poison, but damage continually increases)
+Toxic Spikes	Poison	Status	20	---	---	Enemies	No	No	Poisons enemies that switch in
+Transform	Normal	Status	10	---	---	One	No	No	Becomes the target: includes type, moveset, and species
+Tri Attack	Normal	Special	10	80	100	One	No	No	Can burn, paralyze, or freeze
+Trick	Psychic	Status	10	---	100	One	No	No	User and target trade hold items
+Trick Room	Psychic	Status	5	---	---	Field	No	No	Slower Pokémon go first for five turns
+Trick-or-Treat	Ghost	Status	20	---	100	One	No	No	Turns the Pokémon into a Ghost-type
+Triple Kick	Fighting	Physical	10	10	90	One	No	Yes	Hits thrice, getting continually stronger
+Trump Card	Normal	Special	5	---	---	One	No	Yes	Less PP = more damage
+Twineedle	Bug	Physical	20	25	100	One	No	No	May poison; hits twice
+Twister	Dragon	Special	20	40	100	Enemies	No	No	May cause flinching
+Uproar	Normal	Special	10	90	100	One	No	Yes	Uproars for three turns, causing slight damage and preventing Sleep
+U-Turn	Bug	Physical	20	70	100	One (Random)	No	No	User attacks, then switches out for a different Pokémon
+Vacuum Wave	Fighting	Special	30	40	100	One	No	No	Always first
+Venom Drench	Poison	Status	20	---	100	Enemies	No	No	Poisoned Pokémon get lowered Attack, Speed, and Sp. Atk.
+Venoshock	Poison	Special	10	65	100	One	No	No	Power doubles on Poisoned targets
+ViceGrip	Normal	Physical	30	55	100	One	No	Yes	
+Vine Whip	Grass	Physical	25	45	100	One	No	Yes	
+Vital Throw	Fighting	Physical	10	70	100	One	No	Yes	This move goes last, but it will not miss
+Volt Switch	Electric	Special	20	70	100	One	No	No	User attacks, then switches out for a different Pokémon
+Volt Tackle	Electric	Physical	15	120	100	One	No	Yes	The user takes serious recoil damage; may paralyze target
+Wake-Up Slap	Fighting	Physical	10	60	100	One	No	Yes	Increased damage on Sleeping Pokémon, but they will wake up
+Water Gun	Water	Special	25	40	100	One	No	Yes	
+Water Pledge	Water	Special	10	80	100	One	No	No	More powerful with other Pledges
+Water Pulse	Water	Special	20	60	100	One	Yes	No	May cause confusion
+Water Shuriken	Water	Physical	20	15	100	One	No	No	Hits two to five times, and always goes first
+Water Sport	Water	Status	15	---	100	Field	No	No	Weakens Fire-type moves
+Water Spout	Water	Special	5	---	100	Enemies	No	No	Damage is higher with more HP
+Waterfall	Water	Physical	15	80	100	One	No	Yes	May cause flinching
+Weather Ball	Normal	Special	10	50	100	One	No	No	Type is weather-dependent (Sunny = Fire, Rainy = Water, Hail = Ice, Sandstorm = Ground)
+Whirlpool	Water	Special	15	35	85	One	No	No	User is hit for four to five turns in a whirlpool
+Whirlwind	Normal	Status	20	---	---	One	No	No	The target either is switched out in Trainer battles, or the battle ends in the wild
+Wide Guard	Rock	Status	10	---	---	Allies	No	No	Prevents wide-ranging attacks for one turn; fails when used consecutively
+Wild Charge	Electric	Physical	15	90	100	One	No	Yes	Damages user slightly
+Will-O-Wisp	Fire	Status	15	---	85	One	No	No	Causes a burn
+Wing Attack	Flying	Physical	35	60	100	One	Yes	Yes	
+Wish	Normal	Status	10	---	---	User	No	No	One turn after this move's user, HP is restored by up to 50% of max
+Withdraw	Water	Status	40	---	---	User	No	No	Raises Defense
+Wonder Room	Psychic	Status	10	---	---	Field	No	No	Swaps Defense and Sp. Def. for several turns
+Wood Hammer	Grass	Physical	15	120	100	One	No	Yes	User takes serious recoil damage
+Work Up	Normal	Status	30	---	---	User	No	No	Raises Attack and Sp. Atk.
+Worry Seed	Grass	Status	10	---	100	One	No	No	Prevents the target from Sleeping
+Wrap	Normal	Physical	20	15	90	One	No	Yes	Binds the target and damages it for four or five turns
+Wring Out	Normal	Special	5	---	100	One	No	Yes	More target HP = more damage
+X-Scissor	Bug	Physical	15	80	100	One	No	Yes	
+Yawn	Normal	Status	10	---	100	One	No	No	Target falls asleep several turns later
+Zap Cannon	Electric	Special	5	120	50	One	No	No	May cause paralysis
+Zen Headbutt	Psychic	Physical	15	80	90	One	No	Yes	May cause flinching

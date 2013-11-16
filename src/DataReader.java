@@ -13,7 +13,10 @@ public class DataReader {
 	HashMap<String, Ability> abilitydict = new HashMap<String, Ability>();
 	HashMap<String, Type> typedict = new HashMap<String, Type>();
 	ArrayList<Type> typelist = new ArrayList<Type>();
-	ArrayList<Creature> creaturelist = new ArrayList<Creature>();
+
+	ArrayList<Creature> stdcreaturelist = new ArrayList<Creature>();
+	ArrayList<Creature> aircreaturelist = new ArrayList<Creature>();
+
 	ArrayList<Creature> partyLineup = new ArrayList<Creature>();
 	ArrayList<String> exceptions = new ArrayList<String>();
 
@@ -21,7 +24,6 @@ public class DataReader {
 		exceptions.add("Arceus");
 		// exceptions.add("Blaziken");
 		exceptions.add("Darkrai");
-		exceptions.add("Deoxys");
 		exceptions.add("Deoxys");
 		exceptions.add("Dialga");
 		// exceptions.add("Excadrill");
@@ -119,39 +121,29 @@ public class DataReader {
 				newCreature.setName(elements[1]);
 				String[] types = elements[2].split("/");
 				Type[] creatureType;
-				boolean toAdd = false;
+				boolean toAdd = true;
 				types[0] = types[0].substring(0, 3).toUpperCase();
 				if (types.length > 1) {
 					types[1] = types[1].substring(0, 3).toUpperCase();
-
-					int con = calculateWeaknessCount(types[0], types[1]);
-					int pro = calculateStrengthCount(types[0], types[1]);
-					int atkr = calculateDoubleCount(types[0], types[1]);
-
-					if (pro >= con) {
-						// good defensive type
-						toAdd = true;
-					}
-					if (atkr < 4) {
-						// if a duo type can be only good against 4 types
-						// do not want
-						// toAdd = false;
-					}
-					creatureType = new Type[] { typedict.get(types[0]),
+					Type[] typeFind = new Type[] { typedict.get(types[0]),
 							typedict.get(types[1]) };
+
+					int con = calculateWeaknessCount(typeFind);
+					int pro = calculateStrengthCount(typeFind);
+					// int atkr = calculateDoubleCount(typeFind);
+
+					toAdd = pro >= con && toAdd;
+					// toAdd = atkr > 4;
+					creatureType = typeFind;
 				} else {
-					Type t = typedict.get(types[0]);
-					if (t.getHalfDamageFrom().size()
-							+ t.getNoDamageFrom().size() >= t
-							.getDoubleDamageFrom().size()) {
-						// good defensive type
-						toAdd = true;
-					}
-					if (t.getDoubleDamageAgainst().size() < 2) {
-						// if it is only good against 1 type
-						// do not want
-						// toAdd = false;
-					}
+					Type[] typeFind = new Type[] { typedict.get(types[0]) };
+
+					int con = calculateWeaknessCount(typeFind);
+					int pro = calculateStrengthCount(typeFind);
+					// int atkr = calculateDoubleCount(typeFind);
+
+					toAdd = pro >= con && toAdd;
+					// toAdd = atkr > 1;
 					creatureType = new Type[] { typedict.get(types[0]) };
 				}
 				newCreature.setTypes(creatureType);
@@ -164,14 +156,17 @@ public class DataReader {
 
 				Stats baseStats = new Stats(elements[4], elements[5],
 						elements[6], elements[7], elements[8], elements[9]);
-				if (baseStats.getTotal() < 500) {
-					// total status value need to be at least 500 to consider
-					// competitive
-					toAdd = false;
-				}
+
+				toAdd = baseStats.getTotal() >= 500 && toAdd;
+				toAdd = true; // overwrite original logic
+				toAdd = !exceptions.contains(elements[1]) && toAdd;
 				newCreature.setBaseStats(baseStats);
 				if (toAdd) {
-					creaturelist.add(newCreature);
+					stdcreaturelist.add(newCreature);
+					if (elements[2].contains("Flying")
+							|| elements[3].contains("Levitate")) {
+						aircreaturelist.add(newCreature);
+					}
 				}
 			} else if (file.equals("Misc")) {
 				if (abilitydict.get(elements[0]) == null) {
@@ -182,14 +177,12 @@ public class DataReader {
 		}
 	}
 
-	private int calculateDoubleCount(String t1, String t2) {
-		Type type1 = typedict.get(t1);
-		Type type2 = typedict.get(t2);
-
+	private int calculateDoubleCount(Type[] types) {
 		ArrayList<Type> resultDoubleAgainst = new ArrayList<Type>();
-		resultDoubleAgainst.addAll(type1.getDoubleDamageAgainst());
-		if (type2 != null)
-			resultDoubleAgainst.addAll(type2.getDoubleDamageAgainst());
+
+		for (int i = 0; i < types.length; i++) {
+			resultDoubleAgainst.addAll(types[i].getDoubleDamageAgainst());
+		}
 
 		LinkedHashSet<Type> rda = new LinkedHashSet<Type>(resultDoubleAgainst);
 		resultDoubleAgainst = new ArrayList<Type>(rda);
@@ -197,51 +190,14 @@ public class DataReader {
 		return resultDoubleAgainst.size();
 	}
 
-	private int calculateWeaknessCount(String t1, String t2) {
-		Type type1 = typedict.get(t1);
-		Type type2 = typedict.get(t2);
-
+	private int calculateStrengthCount(Type[] types) {
 		ArrayList<Type> resultGoodAgainst = new ArrayList<Type>();
 		ArrayList<Type> resultBadAgainst = new ArrayList<Type>();
 
-		resultBadAgainst.addAll(type1.getDoubleDamageFrom());
-		resultGoodAgainst.addAll(type1.getHalfDamageFrom());
-		resultGoodAgainst.addAll(type1.getNoDamageFrom());
-
-		if (type2 != null) {
-			resultBadAgainst.addAll(type2.getDoubleDamageFrom());
-			resultGoodAgainst.addAll(type2.getHalfDamageFrom());
-			resultGoodAgainst.addAll(type2.getNoDamageFrom());
-		}
-
-		LinkedHashSet<Type> rga = new LinkedHashSet<Type>(resultGoodAgainst);
-		resultGoodAgainst = new ArrayList<Type>(rga);
-		LinkedHashSet<Type> rba = new LinkedHashSet<Type>(resultBadAgainst);
-		resultBadAgainst = new ArrayList<Type>(rba);
-
-		ArrayList<Type> temp = new ArrayList<Type>();
-		temp.addAll(resultBadAgainst);
-		resultBadAgainst.removeAll(resultGoodAgainst);
-		resultGoodAgainst.removeAll(temp);
-
-		return resultBadAgainst.size();
-	}
-
-	private int calculateStrengthCount(String t1, String t2) {
-		Type type1 = typedict.get(t1);
-		Type type2 = typedict.get(t2);
-
-		ArrayList<Type> resultGoodAgainst = new ArrayList<Type>();
-		ArrayList<Type> resultBadAgainst = new ArrayList<Type>();
-
-		resultBadAgainst.addAll(type1.getDoubleDamageFrom());
-		resultGoodAgainst.addAll(type1.getHalfDamageFrom());
-		resultGoodAgainst.addAll(type1.getNoDamageFrom());
-
-		if (type2 != null) {
-			resultBadAgainst.addAll(type2.getDoubleDamageFrom());
-			resultGoodAgainst.addAll(type2.getHalfDamageFrom());
-			resultGoodAgainst.addAll(type2.getNoDamageFrom());
+		for (int i = 0; i < types.length; i++) {
+			resultGoodAgainst.addAll(types[i].getHalfDamageFrom());
+			resultGoodAgainst.addAll(types[i].getNoDamageFrom());
+			resultBadAgainst.addAll(types[i].getDoubleDamageFrom());
 		}
 
 		LinkedHashSet<Type> rga = new LinkedHashSet<Type>(resultGoodAgainst);
@@ -255,6 +211,29 @@ public class DataReader {
 		resultGoodAgainst.removeAll(temp);
 
 		return resultGoodAgainst.size();
+	}
+
+	private int calculateWeaknessCount(Type[] types) {
+		ArrayList<Type> resultGoodAgainst = new ArrayList<Type>();
+		ArrayList<Type> resultBadAgainst = new ArrayList<Type>();
+
+		for (int i = 0; i < types.length; i++) {
+			resultGoodAgainst.addAll(types[i].getHalfDamageFrom());
+			resultGoodAgainst.addAll(types[i].getNoDamageFrom());
+			resultBadAgainst.addAll(types[i].getDoubleDamageFrom());
+		}
+
+		LinkedHashSet<Type> rga = new LinkedHashSet<Type>(resultGoodAgainst);
+		resultGoodAgainst = new ArrayList<Type>(rga);
+		LinkedHashSet<Type> rba = new LinkedHashSet<Type>(resultBadAgainst);
+		resultBadAgainst = new ArrayList<Type>(rba);
+
+		ArrayList<Type> temp = new ArrayList<Type>();
+		temp.addAll(resultBadAgainst);
+		resultBadAgainst.removeAll(resultGoodAgainst);
+		resultGoodAgainst.removeAll(temp);
+
+		return resultBadAgainst.size();
 	}
 
 	private void duoCombination() {
@@ -358,8 +337,8 @@ public class DataReader {
 		int defCount = 0, defenseMargin = 300;
 		Type searchType = typedict.get(type.substring(0, 3).toUpperCase());
 
-		for (int i = 0; i < creaturelist.size(); i++) {
-			Creature currCreature = creaturelist.get(i);
+		for (int i = 0; i < stdcreaturelist.size(); i++) {
+			Creature currCreature = stdcreaturelist.get(i);
 			if (exceptions.contains(currCreature.getName()))
 				continue;
 
@@ -392,13 +371,8 @@ public class DataReader {
 					+ currCreature.getName();
 			URL creatureUrl = new URL(url);
 
-			String t1 = currCreature.getTypes()[0].getName(), t2 = "";
-
-			if (currCreature.getTypes().length > 1) {
-				t2 = currCreature.getTypes()[1].getName();
-			}
-			int doubleAgainst = calculateDoubleCount(t1, t2);
-			int halfFrom = calculateStrengthCount(t1, t2);
+			int doubleAgainst = calculateDoubleCount(currCreature.getTypes());
+			int halfFrom = calculateStrengthCount(currCreature.getTypes());
 
 			if (offensiveSpear >= atkMargin) {
 				System.out
@@ -465,37 +439,130 @@ public class DataReader {
 	}
 
 	boolean[] defeatedTypes = new boolean[typelist.size()];
+	boolean[] containTypes = new boolean[typelist.size()];
 
 	private void buildParty(String[] existingIdea) {
-		if (defeatedTypes == null || defeatedTypes.length == 0)
+		// if the the array of existing idea is empty, then pick an idea
+		// else find the selection and add it to the party
+		// process any necessary information
+		if (defeatedTypes == null || defeatedTypes.length == 0) {
 			defeatedTypes = new boolean[typelist.size()];
+			containTypes = new boolean[typelist.size()];
+		}
 
 		if (existingIdea == null || existingIdea.length == 0) {
 			// no idea, fill party
+			Creature strongest = stdcreaturelist.get(0);
+			for (int i = 1; i < stdcreaturelist.size(); i++) {
+				// iterate the list find the strongest selection
+				Creature currCreature = stdcreaturelist.get(i);
+				if (partyLineup.contains(currCreature))
+					continue;
+
+				// check to see if type being covered has been fulfilled
+				int typeFlip = 0;
+				int undefeated = 0;
+				for (boolean b : defeatedTypes) {
+					if (!b) {
+						undefeated++;
+					}
+				}
+				for (Type t : currCreature.getTypes()) {
+					for (Type stronger : t.getDoubleDamageAgainst()) {
+						int typeIdx = findTypeIndex(stronger);
+						if (!defeatedTypes[typeIdx]
+								&& !containTypes[findTypeIndex(t)]) {
+							typeFlip++;
+						}
+					}
+				}
+
+				if (typeFlip > 0 && (float) undefeated / typeFlip >= 1) {
+					strongest = betterCreature(currCreature, strongest);
+				}
+
+			}
+			buildParty(new String[] { strongest.getName() });
 		} else {
+			if (existingIdea[0].equals("STOP")) {
+				return;
+			}
 			// process the existing party
 			for (String name : existingIdea) {
-				for (int i = 0; i < creaturelist.size(); i++) {
-					Creature partySelect = creaturelist.get(i);
+				for (int i = 0; i < stdcreaturelist.size(); i++) {
+					Creature partySelect = stdcreaturelist.get(i);
 					if (partySelect.getName().equalsIgnoreCase(name)) {
 						partyLineup.add(partySelect);
 						for (Type t : partySelect.getTypes()) {
 							// get the type of the selected creature
+							containTypes[findTypeIndex(t)] = true;
 							for (Type strongAgainst : t
 									.getDoubleDamageAgainst()) {
 								// mark off all the type this creature will
 								// cover by STAB
-								int typeIdx = findTypeIndex(strongAgainst);
-								if (typeIdx > -1) {
-									defeatedTypes[typeIdx] = true;
-								}
+								defeatedTypes[findTypeIndex(strongAgainst)] = true;
+
 							}
 						}
 					}
 				}
 			}
-			buildParty(null);
+
+			for (boolean b : defeatedTypes) {
+				if (!b) {
+					buildParty(null);
+					return;
+				}
+			}
+
+			for (Creature c : partyLineup) {
+				displayCreature(c);
+			}
+
+			System.out.println("types covered ");
+			for (int i = 0; i < typelist.size(); i++) {
+				if (defeatedTypes[i]) {
+					System.out.print(typelist.get(i) + " ");
+				}
+			}
+			System.out.println();
 		}
+	}
+
+	private void displayCreature(Creature currCreature) {
+		String url = "http://bulbapedia.bulbagarden.net/wiki/"
+				+ currCreature.getName();
+
+		System.out.printf("%s \n[%s]\n", currCreature, url);
+		for (Ability a : currCreature.getAbilities()) {
+			if (a == null) {
+				System.exit(0);
+			}
+			System.out.println(a);
+		}
+		System.out.println(currCreature.getBaseStats());
+
+		for (Type t : currCreature.getTypes()) {
+			if (t == null) {
+				// something went wrong
+			}
+			for (Move m : t.getStrongMoves()) {
+				// only increment attacker count if it finds
+				// compatible moves
+				if (currCreature.getBaseStats().getPhyDmg() >= 100
+						&& m.getType() == MoveType.PHYSICAL) {
+					// list all physical move of the type
+					// System.out.println(m);
+				}
+				if (currCreature.getBaseStats().getMagDmg() >= 100
+						&& m.getType() == MoveType.SPECIAL) {
+					// list all special move of the type
+					// System.out.println(m);
+				}
+			}
+		}
+
+		System.out.println();
 	}
 
 	private int findTypeIndex(Type type) {
@@ -508,23 +575,66 @@ public class DataReader {
 		return -1;
 	}
 
+	private Creature betterCreature(Creature compare1, Creature compare2) {
+		int offensiveSpear = 0;
+		int defensiveShield = 0;
+		int bonus = 0;
+
+		boolean notToSkip = true;
+
+		offensiveSpear += 100 <= compare1.getBaseStats().getPhyDmg() ? 1 : 0;
+		offensiveSpear += 100 <= compare1.getBaseStats().getMagDmg() ? 1 : 0;
+
+		bonus += 100 <= compare1.getBaseStats().getHealth() ? 1 : 0;
+		bonus += 80 <= compare1.getBaseStats().getSpd() ? 1 : 0;
+
+		defensiveShield += 100 <= compare1.getBaseStats().getPhyDef() ? 1 : 0;
+		defensiveShield += 100 <= compare1.getBaseStats().getMagDef() ? 1 : 0;
+		defensiveShield += 100 <= compare1.getBaseStats().getHealth() ? 1 : 0;
+
+		notToSkip = (offensiveSpear >= 1 && bonus >= 1) || defensiveShield >= 2;
+
+		if (!notToSkip)
+			return compare2;
+
+		// comparing type advantage, only take the highest one
+		if (calculateDoubleCount(compare1.getTypes()) > calculateDoubleCount(compare2
+				.getTypes())) {
+			return compare1;
+		} else if (calculateDoubleCount(compare1.getTypes()) == calculateDoubleCount(compare2
+				.getTypes())) {
+			if (calculateStrengthCount(compare1.getTypes()) > calculateStrengthCount(compare2
+					.getTypes())) {
+				return compare1;
+			} else if ((calculateStrengthCount(compare1.getTypes()) == calculateStrengthCount(compare2
+					.getTypes()))) {
+				if (calculateWeaknessCount(compare2.getTypes()) < calculateWeaknessCount(compare2
+						.getTypes())) {
+					return compare1;
+				}
+			}
+		}
+
+		return compare2;
+	}
+
 	public static void main(String[] args) {
 		DataReader dr = new DataReader();
 		try {
 			dr.readFile("TypeChart");
 			dr.readFile("AbilityList");
 			dr.readFile("MoveList");
-			dr.readFile("CreatureList");
 			dr.readFile("Misc");
+			dr.readFile("CreatureList");
 
-			dr.candidateAnalysis("ABCD");
-			dr.buildParty(null);
+			// dr.candidateAnalysis("ABCD");
+			dr.buildParty(new String[] {});
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			// } catch (MalformedURLException e) {
+			// // TODO Auto-generated catch block
+			// e.printStackTrace();
 		}
 	}
 }

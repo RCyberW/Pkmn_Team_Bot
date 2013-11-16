@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
+import java.util.Random;
 import java.util.Scanner;
 
 public class DataReader {
@@ -452,7 +453,9 @@ public class DataReader {
 
 		if (existingIdea == null || existingIdea.length == 0) {
 			// no idea, fill party
-			Creature strongest = stdcreaturelist.get(0);
+			Random ran = new Random();
+			Creature strongest = stdcreaturelist.get(ran
+					.nextInt(stdcreaturelist.size()));
 			for (int i = 1; i < stdcreaturelist.size(); i++) {
 				// iterate the list find the strongest selection
 				Creature currCreature = stdcreaturelist.get(i);
@@ -477,7 +480,11 @@ public class DataReader {
 					}
 				}
 
-				if (typeFlip > 0 && (float) undefeated / typeFlip >= 1) {
+				if (undefeated > 3) {
+					if (typeFlip > 3) {
+						strongest = betterCreature(currCreature, strongest);
+					}
+				} else {
 					strongest = betterCreature(currCreature, strongest);
 				}
 
@@ -536,6 +543,7 @@ public class DataReader {
 		System.out.printf("%s \n[%s]\n", currCreature, url);
 		for (Ability a : currCreature.getAbilities()) {
 			if (a == null) {
+				System.out.println("NULL ABILITY");
 				System.exit(0);
 			}
 			System.out.println(a);

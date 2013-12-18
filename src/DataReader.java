@@ -4,7 +4,9 @@ import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Random;
 import java.util.Scanner;
@@ -119,7 +121,12 @@ public class DataReader {
 				}
 			} else if (file.equals("CreatureList") && counter > 0) {
 				Creature newCreature = new Creature();
+				if(exceptions.contains(elements[1])) {
+					continue;
+				}
 				newCreature.setName(elements[1]);
+
+				// get Pokemon types
 				String[] types = elements[2].split("/");
 				Type[] creatureType;
 				boolean toAdd = true;
@@ -149,12 +156,18 @@ public class DataReader {
 				}
 				newCreature.setTypes(creatureType);
 
+				// get Pokemon ability
 				String[] abilities = elements[3].split(",");
 				for (int i = 0; i < abilities.length; i++) {
 					Ability currAbil = abilitydict.get(abilities[i].trim());
-					newCreature.addAbility(currAbil);
+					if (currAbil != null) {
+						int count = currAbil.getCount() + 1;
+						currAbil.setCount(count);
+						newCreature.addAbility(currAbil);
+					}
 				}
 
+				// get Pokemon base stats
 				Stats baseStats = new Stats(elements[4], elements[5],
 						elements[6], elements[7], elements[8], elements[9]);
 
@@ -285,17 +298,12 @@ public class DataReader {
 		for (int i = 0; i < typelist.size(); i++) {
 			Type type = typelist.get(i);
 			System.out.println(type.getName());
-			// System.out.println("2.0 dmg atk "
-			// + type.getDoubleDamageAgainst());
-			// System.out
-			// .println("0.5 dmg atk " + type.getHalfDamageAgainst());
-			// System.out.println("0.0 dmg atk " +
-			// type.getNoDamageAgainst());
-			// System.out.println("2.0 dmg def " +
-			// type.getDoubleDamageFrom());
-			// System.out.println("0.5 dmg def " +
-			// type.getHalfDamageFrom());
-			// System.out.println("0.0 dmg def " + type.getNoDamageFrom());
+			System.out.println("2.0 dmg atk " + type.getDoubleDamageAgainst());
+			System.out.println("0.5 dmg atk " + type.getHalfDamageAgainst());
+			System.out.println("0.0 dmg atk " + type.getNoDamageAgainst());
+			System.out.println("2.0 dmg def " + type.getDoubleDamageFrom());
+			System.out.println("0.5 dmg def " + type.getHalfDamageFrom());
+			System.out.println("0.0 dmg def " + type.getNoDamageFrom());
 			System.out.println("STRONGER MOVES: \n" + type.getStrongMoves());
 			System.out.println();
 		}
@@ -439,6 +447,20 @@ public class DataReader {
 				+ " defenders out of " + y + " candidates");
 	}
 
+	private void abilityAnalysis() {
+		int total = 0;
+		Iterator<Ability> list = abilitydict.values().iterator();
+		while (list.hasNext()) {
+			Ability abil = list.next();
+			if (abil.getCount() > 0) {
+				total += abil.getCount();
+				System.out.printf("%s has %d users\n", abil.getName(),
+						abil.getCount());
+			}
+		}
+		System.out.println(total + " candidates");
+	}
+	
 	boolean[] defeatedTypes = new boolean[typelist.size()];
 	boolean[] containTypes = new boolean[typelist.size()];
 
@@ -636,7 +658,8 @@ public class DataReader {
 			dr.readFile("CreatureList");
 
 			// dr.candidateAnalysis("ABCD");
-			dr.buildParty(new String[] {});
+			// dr.buildParty(new String[] {});
+			dr.abilityAnalysis();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

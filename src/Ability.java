@@ -2,6 +2,7 @@
 public class Ability {
 	private String name;
 	private String description;
+	private int count;
 	
 	public String getName() {
 		return name;
@@ -18,5 +19,11 @@ public class Ability {
 	
 	public String toString() {
 		return name + "::" + description;
+	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
 	}
 }
